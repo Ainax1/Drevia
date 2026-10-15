@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1c1612;
+  --color-paper: #f3eee6;
+  --color-bone: #e6dfd2;
+  --color-copper: #c56a32;
+  --color-muted: #6f675c;
+  --color-line: #d9d0c3;
+  --color-desk: #241e19;
+  --color-pigment-copper: #9a4e22;
+  --color-pigment-wine: #7a303c;
+  --color-pigment-moss: #2f5640;
+  --color-pigment-sea: #244c58;
+  --color-pigment-sand: #6f5424;
+  --color-pigment-ink: #1c1612;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    background: var(--color-desk);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 240ms ease-out;
+}
+
+.device {
+  height: 100dvh;
+}
+
+.dock {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+@media (min-width: 768px) {
+  .device {
+    height: min(860px, calc(100dvh - 3rem));
+    border-radius: 2.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
