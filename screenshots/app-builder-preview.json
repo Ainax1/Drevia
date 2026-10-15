@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Deriva",
+      "hasCanvas": false,
+      "bodyTextLen": 312,
+      "bodyTextHash": "219d17f484d46000465cd945f86064413370654c865e8132e8bfaa089c5d1488",
+      "bodyTextPrefix": "17:01 Deriva En espera En espera. Todavía no ha empezado. Nada t",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Deriva",
+      "hasCanvas": false,
+      "bodyTextLen": 312,
+      "bodyTextHash": "219d17f484d46000465cd945f86064413370654c865e8132e8bfaa089c5d1488",
+      "bodyTextPrefix": "17:01 Deriva En espera En espera. Todavía no ha empezado. Nada t",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
